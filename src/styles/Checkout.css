@@ -1,0 +1,141 @@
+.checkout-container {
+  max-width: 1150px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.checkout-container h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.address-section,
+.summary-section {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.address-section h2,
+.summary-section h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 25px;
+  background: #e63946;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+  background: #c82333;
+}
+
+.place-order-btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.summary-product {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+  align-items: center;
+}
+
+.summary-product img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.summary-product h4 {
+  margin: 0 0 5px;
+}
+
+.summary-product p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.total-row {
+  font-size: 20px;
+  color: #e63946;
+}
+
+.success-page {
+  text-align: center;
+  margin: 100px auto;
+  color: green;
+}
+
+@media (max-width: 768px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+}
